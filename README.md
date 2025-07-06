@@ -25,7 +25,7 @@ Welcome to my retro-inspired personal portfolio website! This project is a tribu
    Open `index.html` in your web browser to see the site.
 
 ## 🖼️ Preview
-![Screenshot of Adeel's Old School Portfolio]([screenshot.png](https://ibb.co/p66VNzWq)
+![Screenshot of Adeel's Old School Portfolio]([screenshot.png](<a href="https://ibb.co/p66VNzWq"><img src="https://i.ibb.co/p66VNzWq/Screenshot-2025-07-06-203205.png" alt="Screenshot-2025-07-06-203205" border="0"></a>))
 
 ## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
