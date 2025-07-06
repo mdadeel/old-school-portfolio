@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #e0e0e0;
+  color: #222;
+  line-height: 1.6;
+  padding: 0;
+}
+header {
+  display: block;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  border-bottom: 3px double #333;
+  background: #c0c0c0;
+  border-radius: 0;
+  box-shadow: 0 2px 8px #88888833;
+}
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #003399;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #888;
+  margin-bottom: 10px;
+  animation: logo-flicker 2.5s infinite alternate;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  padding: 0 18px;
+  margin: 0 5px;
+  text-decoration: underline;
+  color: #003399;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  border-right: 1px solid #888;
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+nav a:last-child {
+  border-right: none;
+}
+nav a:hover {
+  background: #003399;
+  color: #fff;
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 2px 8px #00339955;
+  text-decoration: none;
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #003399;
+  transition: width 0.3s;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+nav a:hover::after {
+  width: 80%;
+}
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  border: 3px ridge #888;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px #aaa;
+}
+.retro-section {
+  margin-bottom: 30px;
+  padding: 18px;
+  border: 2px dashed #003399;
+  background: #f8f8ff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.retro-section:hover {
+  box-shadow: 0 0 20px #00339988, 0 0 8px #888;
+  background: #e6e6fa;
+}
+.retro-section h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #003399;
+  border-bottom: 1px solid #888;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  transition: color 0.3s, letter-spacing 0.3s;
+}
+.retro-section h2:hover {
+  color: #ff6600;
+  letter-spacing: 2px;
+}
+.retro-section ul {
+  margin-left: 20px;
+}
+footer {
+  text-align: center;
+  padding: 12px 0;
+  background: #c0c0c0;
+  border-top: 3px double #333;
+  font-family: 'Courier New', Courier, monospace;
+  color: #003399;
+  margin-top: 40px;
+  font-size: 1rem;
+  animation: footer-blink 3s infinite alternate;
+}
+@keyframes logo-flicker {
+  0% { opacity: 1; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #888; }
+  90% { opacity: 1; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #888; }
+  95% { opacity: 0.7; text-shadow: 0 0 8px #fff, 0 0 16px #003399; }
+  100% { opacity: 1; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #888; }
+}
+@keyframes footer-blink {
+  0%, 90% { color: #003399; }
+  95%, 100% { color: #ff6600; }
+}
+/* Retro button style for future features */
+.button-retro {
+  font-family: 'Courier New', Courier, monospace;
+  background: #c0c0c0;
+  border: 2px outset #888;
+  color: #003399;
+  padding: 8px 20px;
+  font-size: 1rem;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 2px 2px 0 #888;
+}
+.button-retro:hover {
+  background: #003399;
+  color: #fff;
+  box-shadow: 4px 4px 8px #00339955;
+}
